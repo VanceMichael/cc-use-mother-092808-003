@@ -1,0 +1,43 @@
+{
+  "title": "人工智能设计方案权属与工程取舍领域上下文",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "actors",
+    "facts",
+    "constraints"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "const": "ai-design-provenance"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
